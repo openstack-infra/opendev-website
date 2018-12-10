@@ -49,12 +49,14 @@ FAQ
 ===
 
 Isn't this just OpenStack Infrastructure rebranded?
+---------------------------------------------------
 
 It is more than that. We want to make this toolset available to others
 that would find it helpful. OpenStack would become one of the OpenDev
 tenants, but other tenants like Zuul or $gizmo would be just as important.
 
 Can I host my project on OpenDev?
+---------------------------------
 
 Yes! However, as noted above it is still early days yet and the early
 experience might be a bit bumpy. Certain things may still say "OpenStack"
@@ -62,12 +64,14 @@ on them as we figure out the transition. And while any moves should come
 with appropriate redirects, we may have some inadvertent misses.
 
 Can I run tests on Windows or OSX machines?
+-------------------------------------------
 
 Currently all of our test resources are Linux based. Adding additional
 platforms would likely require someone to help us get that running, but Zuul
 will support systems with ansible connection plugins. Talk to us!
 
 I am an existing OpenStack Infra user do I need to do anything?
+---------------------------------------------------------------
 
 No. We'll continue to communicate changes as they happen. We'll also
 do our best to make this as smooth a transition as possible. If we run
@@ -75,10 +79,12 @@ into situations that force us to break something we'll be sure to let
 you know at that point.
 
 Is a CLA required for hosted repos?
+-----------------------------------
 
 No.
 
 What if I don't like Gerrit and would prefer (insert tool here)?
+----------------------------------------------------------------
 
 We've got a fair bit of experience with the existing toolset and adding
 new tools for which we've already got an answer is currently out of scope.
@@ -86,7 +92,10 @@ We think the existing tools (like Gerrit) work well, and should only get
 better as we update them. The system is able to scale because we do not need
 multiple implementations of different software that solve similar problems.
 
-Contact info:
+Contact info
+============
+
 These will be updated when moved to their new OpenDev locations
-Mailing list: openstack-infra@lists.openstack.org
-IRC #openstack-infra on Freenode
+
+* Mailing list: openstack-infra@lists.openstack.org
+* IRC #openstack-infra on Freenode
