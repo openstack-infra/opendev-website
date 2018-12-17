@@ -1,7 +1,16 @@
+- job:
+    name: opendev-website-build
+    description: |
+      Publishes a draft version of the OpenDev website.
+    success-url: www/
+    run: playbooks/copy-to-logs.yaml
+    nodeset:
+      nodes: []
+
 - project:
     check:
       jobs:
-        - noop
+        - opendev-website-build
     gate:
       jobs:
-        - noop
+        - opendev-website-build
