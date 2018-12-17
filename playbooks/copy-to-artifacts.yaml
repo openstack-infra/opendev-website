@@ -1,0 +1,11 @@
+- hosts: localhost
+  tasks:
+    - name: Copy content to artifacts dir
+      copy:
+        src: "{{ zuul.executor.work_root }}/{{ zuul.projects['git.openstack.org/openstack-infra/opendev-website'].src_dir }}/www/"
+        dest: "{{ zuul.executor.work_root }}/artifacts/"
+
+    - name: Write marker text
+      copy:
+        dest: "{{ zuul.executor.work_root }}/artifacts/.root-marker"
+        content: "Project: {{ zuul.project.name }} Branch: {{ zuul.branch }} Build: {{ zuul.build }} Revision: {{ zuul.ref }}"

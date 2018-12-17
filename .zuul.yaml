@@ -7,6 +7,15 @@
     nodeset:
       nodes: []
 
+- job:
+    name: opendev-website-publish
+    parent: publish-opendev-website
+    description: |
+      Publishes the OpenDev website.
+    run: playbooks/copy-to-artifacts.yaml
+    nodeset:
+      nodes: []
+
 - project:
     check:
       jobs:
@@ -14,3 +23,6 @@
     gate:
       jobs:
         - opendev-website-build
+    post:
+      jobs:
+        - opendev-website-publish
