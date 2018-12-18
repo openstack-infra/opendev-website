@@ -1,0 +1,9 @@
+Code-Review+2: Joshua Hesketh <josh@nitrotech.org>
+Code-Review+2: James E. Blair <corvus@inaugust.com>
+Workflow+1: James E. Blair <corvus@inaugust.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 18 Dec 2018 19:09:39 +0000
+Reviewed-on: https://review.openstack.org/625671
+Project: openstack-infra/opendev-website
+Branch: refs/heads/master
