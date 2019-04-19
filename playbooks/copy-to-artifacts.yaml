@@ -2,7 +2,7 @@
   tasks:
     - name: Copy content to artifacts dir
       copy:
-        src: "{{ zuul.executor.work_root }}/{{ zuul.projects['git.openstack.org/openstack-infra/opendev-website'].src_dir }}/www/"
+        src: "{{ zuul.executor.work_root }}/{{ zuul.projects['opendev.org/openstack-infra/opendev-website'].src_dir }}/www/"
         dest: "{{ zuul.executor.work_root }}/artifacts/"
 
     - name: Write marker text
