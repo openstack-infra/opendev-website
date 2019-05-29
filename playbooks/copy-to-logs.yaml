@@ -1,6 +1,0 @@
-- hosts: localhost
-  tasks:
-    - name: Copy content to logs dir
-      copy:
-        src: "{{ zuul.executor.work_root }}/{{ zuul.projects['opendev.org/openstack-infra/opendev-website'].src_dir }}/www"
-        dest: "{{ zuul.executor.log_root }}"
